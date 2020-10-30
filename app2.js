@@ -24,7 +24,7 @@ function start(){
                 alert('Игра окончена!');
                 return 1;
             }
-        }while(!isNumber(num));
+        }while(!isNumber(num) || num > 101 || num < 1);
     function number(){
         if (num > randomNum){
             res = confirm('Ваше число больше');
